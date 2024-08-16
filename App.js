@@ -4,6 +4,7 @@ import CustomButton from "./Components/Shared/CustomButton";
 import Splash from "./Components/Screens/Splash";
 import PageForm from "./Components/Shared/PageForm";
 import SignInScreen from "./Components/Screens/SignInScreen";
+import SignUpScreen from "./Components/Screens/SignUpScreen";
 
 
 export default function App() {
@@ -11,7 +12,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-<SignInScreen/>
+<SignUpScreen/>
     </View>
   );
 }

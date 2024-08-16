@@ -4,16 +4,16 @@ import {
   StyleSheet,
   TextInput,
   StatusBar,
-  TouchableOpacity,
   Image,
 } from "react-native";
 import PageForm from "../Shared/PageForm";
 import { Colors } from "../../themes/Colors";
-import Icon from "react-native-vector-icons/FontAwesome";
-import RadioButtonRN from "radio-buttons-react-native";
 import facebookLogo from "../../Images/iconmonstr-facebook-1.png";
 import twitterLogo from "../../Images/iconmonstr-twitter-1.png";
 import { useEffect, useState } from "react";
+import CustomFooter from "../Shared/CustomFooter";
+import CustomRadioWithText from "../Shared/CustomRadioWithText";
+
 const SignInScreen = () => {
   const [selected, setSelected] = useState(false);
   const [correctLoginElements, setCorrectLoginElements] = useState(false);
@@ -82,19 +82,7 @@ const SignInScreen = () => {
             />
           </View>
           <View style={styles.radioAndForgotPassView}>
-            <TouchableOpacity
-              style={styles.option}
-              onPress={() => {
-                setSelected(!selected);
-              }}
-            >
-              <Icon
-                name={selected ? "check-circle" : "circle-thin"}
-                size={24}
-                color={selected ? Colors.mainBlue : "#D1DDDF"}
-              />
-              <Text style={styles.text}>Remember me</Text>
-            </TouchableOpacity>
+            <CustomRadioWithText text="Remember me" />
 
             <Text style={styles.forgotYourPassword}>Forgot your Password?</Text>
           </View>
@@ -116,14 +104,7 @@ const SignInScreen = () => {
           </View>
         </View>
       </View>
-      <View style={styles.footerView}>
-        <Text style={styles.footerText}>
-          By signing in, creating an account, or checking out as a Guest, you
-          are agreeing to our{" "}
-          <Text style={{ color: "black" }}>Terms of Use</Text> and our{" "}
-          <Text style={{ color: "black" }}>Privacy Policy</Text>
-        </Text>
-      </View>
+      <CustomFooter />
     </View>
   );
 };
