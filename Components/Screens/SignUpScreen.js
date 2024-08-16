@@ -26,7 +26,7 @@ const SignUpScreen = () => {
   }, [passwordInputValue, emailInputValue, nameInputValue]);
 
   return (
-    <View style={styles.signInScreen}>
+    <View style={styles.signUpScreen}>
       <StatusBar barStyle="dark-content" />
       <View>
         <PageForm
@@ -71,7 +71,7 @@ const SignUpScreen = () => {
 export default SignUpScreen;
 
 const styles = StyleSheet.create({
-  signInScreen: {
+  signUpScreen: {
     flex: 1,
     paddingTop: 108,
     paddingBottom: 54,

@@ -32,11 +32,16 @@ export default PageForm;
 const styles = StyleSheet.create({
   pageForm: {
     rowGap: 20,
+    alignItems: "center",
   },
- 
+  titleView: {
+    alignItems: "flex-start",
+    width: "100%",
+  },
   title: {
     fontSize: 24,
     fontFamily: "circular",
     fontWeight: "bold",
+    textAlign: "left",
   },
 });

@@ -6,22 +6,23 @@ import { useState } from "react";
 
 const ForgotPasswordScreen = () => {
   const [emailInputValue, setEmailInputValue] = useState("");
+
   return (
     <View style={styles.ForgotPasswordScreen}>
       <PageForm
         title="Forgot Password"
-        ButtonContent="SendEmail"
+        ButtonContent="Send Email"
         buttonBackgroundColor={Colors.mainBlue}
         buttonTextColor={Colors.CustomWhite}
       >
-        <View style={styles.whiteSpace}></View>
-        <CustomTextInput
-          inputMode="email"
-          placeholder="Email"
-          value={emailInputValue}
-          function={setEmailInputValue}
-          style={styles.Email}
-        />
+        <View style={styles.whiteSpace}>
+          <CustomTextInput
+            inputMode="email"
+            placeholder="Email"
+            value={emailInputValue}
+            function={setEmailInputValue}
+          />
+        </View>
       </PageForm>
     </View>
   );
@@ -31,11 +32,12 @@ export default ForgotPasswordScreen;
 const styles = StyleSheet.create({
   ForgotPasswordScreen: {
     flex: 1,
-    alignItems: "center",
+
     paddingTop: 108,
   },
 
   whiteSpace: {
-    height: 200,
+    paddingTop: 200,
+    width: "100%",
   },
 });
