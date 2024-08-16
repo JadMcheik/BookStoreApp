@@ -13,6 +13,7 @@ import twitterLogo from "../../Images/iconmonstr-twitter-1.png";
 import { useEffect, useState } from "react";
 import CustomFooter from "../Shared/CustomFooter";
 import CustomRadioWithText from "../Shared/CustomRadioWithText";
+import CustomTextInput from "../Shared/CustomTextInput";
 
 const SignInScreen = () => {
   const [selected, setSelected] = useState(false);
@@ -65,20 +66,19 @@ const SignInScreen = () => {
           }
         >
           <View style={styles.inputsView}>
-            <TextInput
+            <CustomTextInput
               inputMode="email"
               placeholder="Email"
-              style={styles.inputField}
               value={emailInputValue}
-              onChangeText={setEmailInputValue}
+              function={setEmailInputValue}
             />
-            <TextInput
+
+            <CustomTextInput
               inputMode="password"
-              secureTextEntry={true}
               placeholder="Password"
-              style={styles.inputField}
-              onChangeText={setPasswordInputValue}
               value={passwordInputValue}
+              function={setPasswordInputValue}
+              secureTextEntry={true}
             />
           </View>
           <View style={styles.radioAndForgotPassView}>
@@ -125,32 +125,11 @@ const styles = StyleSheet.create({
   inputsView: {
     rowGap: 10,
   },
-  inputField: {
-    width: 335,
-    height: 56,
-    fontSize: 17,
-    fontFamily: "circular",
-    paddingLeft: 20,
-    backgroundColor: Colors.inputBgColor,
-    borderRadius: 218,
-  },
   radioAndForgotPassView: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
   },
-  option: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  text: {
-    fontSize: 12,
-    fontWeight: "bold",
-    fontFamily: "circular",
-    color: Colors.lightGray,
-    marginLeft: 6,
-  },
-
   forgotYourPassword: {
     fontSize: 12,
     fontFamily: "circular",
@@ -163,7 +142,6 @@ const styles = StyleSheet.create({
   logosView: {
     flexDirection: "row",
     columnGap: 16,
-
     rowGap: 8,
     alignItems: "center",
     justifyContent: "center",
@@ -178,13 +156,5 @@ const styles = StyleSheet.create({
     borderRadius: 28,
     alignItems: "center",
     justifyContent: "center",
-  },
-
-  footerText: {
-    color: Colors.lightGray,
-    fontFamily: "circular",
-    fontSize: 11,
-    fontWeight: 300,
-    textAlign: "center",
   },
 });

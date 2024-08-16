@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 import CustomRadioWithText from "../Shared/CustomRadioWithText";
 import CustomFooter from "../Shared/CustomFooter";
+import CustomTextInput from "../Shared/CustomTextInput";
 
 const SignUpScreen = () => {
   const [correctSingUp, setCorrectSingUp] = useState(false);
@@ -37,27 +38,25 @@ const SignUpScreen = () => {
           buttonTextColor={correctSingUp ? Colors.CustomWhite : Colors.mainBlue}
         >
           <View style={styles.inputsView}>
-            <TextInput
+            <CustomTextInput
               placeholder="Name"
-              style={styles.inputField}
               value={nameInputValue}
-              onChangeText={setNameInputValue}
+              function={setNameInputValue}
             />
 
-            <TextInput
+            <CustomTextInput
               inputMode="email"
               placeholder="Email"
-              style={styles.inputField}
               value={emailInputValue}
-              onChangeText={setEmailInputValue}
+              function={setEmailInputValue}
             />
-            <TextInput
+
+            <CustomTextInput
               inputMode="password"
-              secureTextEntry={true}
               placeholder="Password"
-              style={styles.inputField}
-              onChangeText={setPasswordInputValue}
               value={passwordInputValue}
+              function={setPasswordInputValue}
+              secureTextEntry={true}
             />
           </View>
 
@@ -84,19 +83,5 @@ const styles = StyleSheet.create({
 
   inputsView: {
     rowGap: 10,
-  },
-  inputField: {
-    width: 335,
-    height: 56,
-    fontSize: 17,
-    fontFamily: "circular",
-    paddingLeft: 20,
-    backgroundColor: Colors.inputBgColor,
-    borderRadius: 218,
-  },
-  radioAndForgotPassView: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
   },
 });

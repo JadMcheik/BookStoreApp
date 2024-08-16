@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
   pageForm: {
     rowGap: 20,
   },
-  titleView: {},
+ 
   title: {
     fontSize: 24,
     fontFamily: "circular",

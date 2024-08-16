@@ -5,6 +5,7 @@ import Splash from "./Components/Screens/Splash";
 import PageForm from "./Components/Shared/PageForm";
 import SignInScreen from "./Components/Screens/SignInScreen";
 import SignUpScreen from "./Components/Screens/SignUpScreen";
+import ForgotPasswordScreen from "./Components/Screens/ForgotPasswordScreen";
 
 
 export default function App() {
@@ -12,7 +13,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-<SignUpScreen/>
+<ForgotPasswordScreen/>
     </View>
   );
 }
