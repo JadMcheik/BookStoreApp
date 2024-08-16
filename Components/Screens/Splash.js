@@ -1,4 +1,4 @@
-import { Image, SafeAreaView, StyleSheet, View , StatusBar } from "react-native";
+import { Image, SafeAreaView, StyleSheet, View, StatusBar } from "react-native";
 import CustomButton from "../Shared/CustomButton";
 import { Colors } from "../../themes/Colors";
 import bookingImage from "../../Images/bookingImage.png";
@@ -8,19 +8,18 @@ const Splash = () => {
       <View style={styles.bookingImageView}>
         <Image source={bookingImage} style={styles.bookingImage} />
       </View>
-<View  style={styles.signInButtonView}><CustomButton
+      <CustomButton
         backgroundColor={Colors.CustomWhite}
         textColor={Colors.mainBlue}
         content="Sign In"
-       
-      /></View>
-     <View><CustomButton
+      />
+      <CustomButton
         backgroundColor={Colors.CustomYellow}
         textColor={Colors.mainBlue}
         content="Sign Up"
-      /></View>
-     
-     <StatusBar style="light" />
+      />
+
+      <StatusBar style="light" />
     </View>
   );
 };
@@ -34,17 +33,12 @@ const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "flex-end",
-    paddingBottom: 74,
+    paddingBottom: 77,
     paddingTop: 77,
-
-
+    rowGap: 20,
   },
 
   bookingImageView: {
     flex: 1,
   },
-  signInButtonView:{
-marginBottom:20,
-
-  },  
 });
