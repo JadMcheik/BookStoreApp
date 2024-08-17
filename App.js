@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import CustomButton from "./Components/Shared/CustomButton";
-import Splash from "./Components/Screens/Splash";
+import Splash from "./app";
 import PageForm from "./Components/Shared/PageForm";
-import SignInScreen from "./Components/Screens/SignInScreen";
-import SignUpScreen from "./Components/Screens/SignUpScreen";
-import ForgotPasswordScreen from "./Components/Screens/ForgotPasswordScreen";
+import SignInScreen from "./app/SignInScreen";
+import SignUpScreen from "./app/SignUpScreen";
+import ForgotPasswordScreen from "./app/ForgotPasswordScreen";
 
 
 export default function App() {

@@ -6,14 +6,15 @@ import {
   StatusBar,
   Image,
 } from "react-native";
-import PageForm from "../Shared/PageForm";
-import { Colors } from "../../themes/Colors";
-import facebookLogo from "../../Images/iconmonstr-facebook-1.png";
-import twitterLogo from "../../Images/iconmonstr-twitter-1.png";
+import PageForm from "../Components/Shared/PageForm";
+import { Colors } from "../themes/Colors";
+import facebookLogo from "../Images/iconmonstr-facebook-1.png";
+import twitterLogo from "../Images/iconmonstr-twitter-1.png";
 import { useEffect, useState } from "react";
-import CustomFooter from "../Shared/CustomFooter";
-import CustomRadioWithText from "../Shared/CustomRadioWithText";
-import CustomTextInput from "../Shared/CustomTextInput";
+import CustomFooter from "../Components/Shared/CustomFooter";
+import CustomRadioWithText from "../Components/Shared/CustomRadioWithText";
+import CustomTextInput from "../Components/Shared/CustomTextInput";
+import { Link } from "expo-router";
 
 const SignInScreen = () => {
   const [selected, setSelected] = useState(false);
@@ -84,7 +85,12 @@ const SignInScreen = () => {
           <View style={styles.radioAndForgotPassView}>
             <CustomRadioWithText text="Remember me" />
 
-            <Text style={styles.forgotYourPassword}>Forgot your Password?</Text>
+            <Link href="/ForgotPasswordScreen">
+              {" "}
+              <Text style={styles.forgotYourPassword}>
+                Forgot your Password?
+              </Text>
+            </Link>
           </View>
         </PageForm>
 
@@ -113,6 +119,7 @@ export default SignInScreen;
 
 const styles = StyleSheet.create({
   signInScreen: {
+    backgroundColor: "#FFFFFF",
     flex: 1,
     paddingTop: 108,
     paddingBottom: 54,

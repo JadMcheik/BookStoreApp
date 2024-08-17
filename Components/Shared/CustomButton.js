@@ -1,14 +1,22 @@
-import { Text, TouchableOpacity, View, StyleSheet } from "react-native";
+import { Link } from "expo-router";
+import { Text, TouchableOpacity, View, StyleSheet, Linking } from "react-native";
 
 const CustomButton = (props) => {
+
+  
+
   return (
-    <TouchableOpacity
+    <Link
+      href={String(props.href)}
       style={[styles.customButton, { backgroundColor: props.backgroundColor }]}
+      asChild
     >
-      <Text style={[styles.customButtonText, { color: props.textColor }]}>
-        {props.content}
-      </Text>
-    </TouchableOpacity>
+      <TouchableOpacity>
+        <Text style={[styles.customButtonText, { color: props.textColor }]}>
+          {props.content}
+        </Text>
+      </TouchableOpacity>
+    </Link>
   );
 };
 

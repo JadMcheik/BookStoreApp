@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
-import PageForm from "../Shared/PageForm";
-import { Colors } from "../../themes/Colors";
-import CustomTextInput from "../Shared/CustomTextInput";
+import PageForm from "../Components/Shared/PageForm";
+import { Colors } from "../themes/Colors";
+import CustomTextInput from "../Components/Shared/CustomTextInput";
 import { useState } from "react";
 
 const ForgotPasswordScreen = () => {
@@ -31,8 +31,9 @@ const ForgotPasswordScreen = () => {
 export default ForgotPasswordScreen;
 const styles = StyleSheet.create({
   ForgotPasswordScreen: {
+    backgroundColor: "#FFFFFF",
     flex: 1,
-
+    paddingHorizontal: 20,
     paddingTop: 108,
   },
 

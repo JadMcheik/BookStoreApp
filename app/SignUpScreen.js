@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet, TextInput, StatusBar } from "react-native";
-import PageForm from "../Shared/PageForm";
-import { Colors } from "../../themes/Colors";
+import PageForm from "../Components/Shared/PageForm";
+import { Colors } from "../themes/Colors";
 import { useEffect, useState } from "react";
 
-import CustomRadioWithText from "../Shared/CustomRadioWithText";
-import CustomFooter from "../Shared/CustomFooter";
-import CustomTextInput from "../Shared/CustomTextInput";
+import CustomRadioWithText from "../Components/Shared/CustomRadioWithText";
+import CustomFooter from "../Components/Shared/CustomFooter";
+import CustomTextInput from "../Components/Shared/CustomTextInput";
 
 const SignUpScreen = () => {
   const [correctSingUp, setCorrectSingUp] = useState(false);
@@ -72,6 +72,7 @@ export default SignUpScreen;
 
 const styles = StyleSheet.create({
   signUpScreen: {
+    backgroundColor: "#FFFFFF",
     flex: 1,
     paddingTop: 108,
     paddingBottom: 54,
