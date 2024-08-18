@@ -34,6 +34,7 @@ const styles = StyleSheet.create({
   customButtonText: {
     textAlign: "center",
     fontSize: 17,
+
     fontFamily: "Circular",
   },
 });
