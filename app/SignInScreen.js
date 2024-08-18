@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
   signInScreen: {
     backgroundColor: "#FFFFFF",
     flex: 1,
-    paddingTop: 108,
+    paddingTop: 38,
     paddingBottom: 54,
     paddingHorizontal: 20,
     alignItems: "center",
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   forgotYourPassword: {
     fontSize: 12,
     fontFamily: "circular",
-    fontWeight: 300,
+    fontWeight: "300",
     color: Colors.lightGray,
   },
   orAndLogosView: {

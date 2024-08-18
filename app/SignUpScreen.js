@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   signUpScreen: {
     backgroundColor: "#FFFFFF",
     flex: 1,
-    paddingTop: 108,
+    paddingTop: 38,
     paddingBottom: 54,
     paddingHorizontal: 20,
     alignItems: "center",

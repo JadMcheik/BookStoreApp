@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontFamily: "circular",
-    fontWeight: "bold",
+    fontWeight:"bold",
     textAlign: "left",
   },
 });

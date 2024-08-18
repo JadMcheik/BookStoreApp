@@ -6,11 +6,10 @@ import { Link, Stack } from "expo-router";
 import CustomButton from "../Components/Shared/CustomButton";
 const Splash = () => {
   <Stack.Screen
-  options={{
-    title: 'My home',
-   
-  }}
-/>
+    options={{
+      title: "My home",
+    }}
+  />;
 
   return (
     <View style={styles.splashScreen}>
@@ -28,7 +27,7 @@ const Splash = () => {
         backgroundColor={Colors.CustomYellow}
         textColor={Colors.mainBlue}
         content="Sign Up"
-         href="/SignUpScreen"
+        href="/SignUpScreen"
       />
 
       <StatusBar style="light" />
@@ -46,7 +45,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-end",
     paddingBottom: 77,
-    paddingTop: 77,
+
     rowGap: 20,
   },
 

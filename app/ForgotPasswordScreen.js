@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     flex: 1,
     paddingHorizontal: 20,
-    paddingTop: 108,
+    paddingTop: 38,
   },
 
   whiteSpace: {
