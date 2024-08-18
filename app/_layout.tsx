@@ -1,4 +1,4 @@
-import { Stack } from 'expo-router';
+import { Stack } from "expo-router";
 import { Colors } from "../themes/Colors";
 
 const Layout = () => {
@@ -21,6 +21,7 @@ const Layout = () => {
       <Stack.Screen name="SignInScreen" />
       <Stack.Screen name="SignUpScreen" />
       <Stack.Screen name="ForgotPasswordScreen" />
+      <Stack.Screen name="HomeScreen" />
     </Stack>
   );
 };

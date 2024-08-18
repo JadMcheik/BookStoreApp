@@ -1,16 +1,21 @@
-import { Image, SafeAreaView, StyleSheet, View, StatusBar } from "react-native";
+import {
+  Image,
+  SafeAreaView,
+  StyleSheet,
+  View,
+  StatusBar,
+  FlatList,
+  ScrollView,
+} from "react-native";
 
 import { Colors } from "../themes/Colors";
 import bookingImage from "../Images/bookingImage.png";
 import { Link, Stack } from "expo-router";
 import CustomButton from "../Components/Shared/CustomButton";
-const Splash = () => {
-  <Stack.Screen
-    options={{
-      title: "My home",
-    }}
-  />;
+import BookCard from "../Components/Shared/BookCard";
+import Card from "../Components/Shared/Card";
 
+const Splash = () => {
   return (
     <View style={styles.splashScreen}>
       <View style={styles.bookingImageView}>

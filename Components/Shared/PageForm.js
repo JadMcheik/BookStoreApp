@@ -7,6 +7,7 @@ const PageForm = ({
   buttonBackgroundColor,
   buttonTextColor,
   children,
+  href,
 }) => {
   return (
     <View style={styles.pageForm}>
@@ -21,6 +22,7 @@ const PageForm = ({
           content={ButtonContent}
           backgroundColor={buttonBackgroundColor}
           textColor={buttonTextColor}
+          href={href}
         />
       </View>
     </View>
@@ -41,7 +43,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontFamily: "circular",
-    fontWeight:"bold",
+    fontWeight: "bold",
     textAlign: "left",
   },
 });
