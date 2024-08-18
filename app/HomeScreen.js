@@ -1,4 +1,4 @@
-import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
+import { FlatList, SafeAreaView, ScrollView, StyleSheet, View } from "react-native";
 import Card from "../Components/Shared/Card";
 
 const HomeScreen = () => {
@@ -58,14 +58,41 @@ const HomeScreen = () => {
     },
   ];
 
+const sections=[
+
+{
+books:books,
+title: "Bestselling"
+},
+
+{
+  books:books,
+  title: "Biography"
+  },
+  
+
+  {
+    books:books,
+    title: "Drama"
+    },
+    
+]
+
+
+
   return (
-    <SafeAreaView style={styles.cardSafeAreaView}>
-      <ScrollView style={styles.cardsScrollView}>
-        <Card data={books} sectionTitle="Bestselling" />
-        <Card data={books} sectionTitle="Biography" />
-        <Card data={books} sectionTitle="Drama" />
-      </ScrollView>
-    </SafeAreaView>
+    <SafeAreaView style={styles.cardSafeAreaView} >
+   
+      <FlatList style={styles.cardsFlatList}  contentInset= {{bottom: 30}}  data={sections}
+       
+        renderItem={({ item }) => (
+          <Card data={item.books} sectionTitle={item.title} />
+        )}
+        keyExtractor={(item) => item.title}
+        ItemSeparatorComponent={() => <View style={{ height: 20 }} />} />
+       
+       </SafeAreaView>
+   
   );
 };
 
@@ -74,10 +101,13 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   cardSafeAreaView: {
     backgroundColor: "#FFFFFF",
+    
   },
-  cardsScrollView: {
+  cardsFlatList: {
     backgroundColor: "#FFFFFF",
+
     paddingTop: 38,
     paddingLeft: 10,
+    paddingBottom:140,
   },
 });
