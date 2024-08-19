@@ -1,13 +1,16 @@
 import { Link } from "expo-router";
-import { Text, TouchableOpacity, View, StyleSheet, Linking } from "react-native";
+import {
+  Text,
+  TouchableOpacity,
+  View,
+  StyleSheet,
+  Linking,
+} from "react-native";
 
 const CustomButton = (props) => {
-
-  
-
   return (
     <Link
-      href={ props.href? String(props.href) : '/'}
+      href={props.href ? String(props.href) : "/"}
       style={[styles.customButton, { backgroundColor: props.backgroundColor }]}
       asChild
     >

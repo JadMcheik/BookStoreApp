@@ -17,12 +17,8 @@ import Card from "../Components/Shared/Card";
 import ProfileScreen from "./(tabs)/ProfileScreen";
 
 const Splash = () => {
-
-
-
-
   return (
-   <View style={styles.splashScreen}>
+    <View style={styles.splashScreen}>
       <View style={styles.bookingImageView}>
         <Image source={bookingImage} style={styles.bookingImage} />
       </View>

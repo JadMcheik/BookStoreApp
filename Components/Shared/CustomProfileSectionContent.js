@@ -1,14 +1,11 @@
 import { Link } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 import Icon from "react-native-vector-icons/AntDesign";
-import { Colors } from "../themes/Colors";
+import { Colors } from "../../themes/Colors";
 
 const CustomProfileSetionContent = (props) => {
-
-
-
   return (
-    <Link href={ props.href? String(props.href) : '/'}>
+    <Link href={props.href ? String(props.href) : "/"}>
       <View style={styles.sectionView}>
         <Text style={styles.sectionText}>{props.sectionText}</Text>
 

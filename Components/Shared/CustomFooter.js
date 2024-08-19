@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     color: Colors.lightGray,
     fontFamily: "circular",
     fontSize: 11,
-    fontWeight: '300',
+    fontWeight: "300",
     textAlign: "center",
   },
 });

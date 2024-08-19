@@ -56,8 +56,7 @@ const SearchCategoryScreen = () => {
       </View>
       <FlatList
         columnWrapperStyle={{ gap }}
-   
-        contentInset={{ bottom: 50 }}
+        contentInset={{ bottom: 70 }}
         numColumns="2"
         data={books}
         renderItem={({ item }) => (
@@ -77,21 +76,20 @@ const styles = StyleSheet.create({
     alignItems: "center",
 
     backgroundColor: "#FFFFFF",
- rowGap:20,
+    rowGap: 20,
   },
 
   SearchBarView: {
     width: 335,
-    height:56,
+    height: 56,
   },
   searchContainer: {
     backgroundColor: "#FFFFFF",
-    borderBottomColor: "transparent", 
+    borderBottomColor: "transparent",
     borderTopColor: "transparent",
   },
   SearchBar: {
     width: "100%",
     backgroundColor: Colors.inputBgColor,
   },
-
 });

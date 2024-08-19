@@ -36,7 +36,6 @@ const SignUpScreen = () => {
             correctSingUp ? Colors.mainBlue : Colors.lightBlue
           }
           buttonTextColor={correctSingUp ? Colors.CustomWhite : Colors.mainBlue}
-
           href={correctSingUp ? "(tabs)" : "/SignUpScreen"}
         >
           <View style={styles.inputsView}>
