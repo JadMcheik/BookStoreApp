@@ -8,6 +8,7 @@ const Layout = () => {
         headerShadowVisible: false,
         headerBackTitleVisible: false,
         headerTitle: "",
+       
       }}
     >
       <Stack.Screen
@@ -21,8 +22,10 @@ const Layout = () => {
       <Stack.Screen name="SignInScreen" />
       <Stack.Screen name="SignUpScreen" />
       <Stack.Screen name="ForgotPasswordScreen" />
-      <Stack.Screen name="HomeScreen" />
-      <Stack.Screen name="SearchCategoryScreen" />
+    
+
+     
+      <Stack.Screen name="(tabs)" options={{ headerShown: true }} />
     </Stack>
   );
 };

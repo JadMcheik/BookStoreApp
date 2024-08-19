@@ -37,7 +37,7 @@ const SignUpScreen = () => {
           }
           buttonTextColor={correctSingUp ? Colors.CustomWhite : Colors.mainBlue}
 
-          href={correctSingUp ? "/HomeScreen" : "/SignUpScreen"}
+          href={correctSingUp ? "(tabs)" : "/SignUpScreen"}
         >
           <View style={styles.inputsView}>
             <CustomTextInput

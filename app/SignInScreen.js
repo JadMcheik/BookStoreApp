@@ -65,7 +65,7 @@ const SignInScreen = () => {
           buttonTextColor={
             correctLoginElements ? Colors.CustomWhite : Colors.mainBlue
           }
-          href={correctLoginElements ? "/HomeScreen" : "/SignInScreen"}
+          href={correctLoginElements ? "/(tabs)" : "/SignInScreen"}
         >
           <View style={styles.inputsView}>
             <CustomTextInput

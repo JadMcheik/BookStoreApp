@@ -14,10 +14,15 @@ import { Link, Stack } from "expo-router";
 import CustomButton from "../Components/Shared/CustomButton";
 import BookCard from "../Components/Shared/BookCard";
 import Card from "../Components/Shared/Card";
+import ProfileScreen from "./(tabs)/ProfileScreen";
 
 const Splash = () => {
+
+
+
+
   return (
-    <View style={styles.splashScreen}>
+   <View style={styles.splashScreen}>
       <View style={styles.bookingImageView}>
         <Image source={bookingImage} style={styles.bookingImage} />
       </View>
@@ -26,7 +31,7 @@ const Splash = () => {
         backgroundColor={Colors.CustomWhite}
         textColor={Colors.mainBlue}
         content="Sign In"
-        href="/SearchCategoryScreen"
+        href="/SignInScreen"
       />
       <CustomButton
         backgroundColor={Colors.CustomYellow}

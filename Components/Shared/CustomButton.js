@@ -7,7 +7,7 @@ const CustomButton = (props) => {
 
   return (
     <Link
-      href={String(props.href)}
+      href={ props.href? String(props.href) : '/'}
       style={[styles.customButton, { backgroundColor: props.backgroundColor }]}
       asChild
     >
