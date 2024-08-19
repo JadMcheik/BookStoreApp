@@ -7,6 +7,7 @@ const Card = (props) => {
       <Text style={styles.sectionTitle}>{props.sectionTitle}</Text>
 
       <FlatList
+      showsHorizontalScrollIndicator={false}
         data={props.data}
         horizontal={true}
         renderItem={({ item }) => (

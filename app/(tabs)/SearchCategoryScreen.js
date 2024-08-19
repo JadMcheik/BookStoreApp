@@ -55,6 +55,8 @@ const SearchCategoryScreen = () => {
         />
       </View>
       <FlatList
+      contentContainerStyle={styles.SearchFlatlist}
+      showsVerticalScrollIndicator={false} 
         columnWrapperStyle={{ gap }}
         contentInset={{ bottom: 70 }}
         numColumns="2"
@@ -90,6 +92,11 @@ const styles = StyleSheet.create({
   },
   SearchBar: {
     width: "100%",
+  
     backgroundColor: Colors.inputBgColor,
+  },
+  SearchFlatlist:{
+    width: "100%",
+    alignItems:'center',
   },
 });

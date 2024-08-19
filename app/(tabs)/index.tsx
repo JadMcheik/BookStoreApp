@@ -83,7 +83,7 @@ title: "Bestselling"
   return (
     <SafeAreaView style={styles.cardSafeAreaView} >
    
-      <FlatList style={styles.cardsFlatList}  contentInset= {{bottom: 30}}  data={sections}
+      <FlatList showsVerticalScrollIndicator={false} style={styles.cardsFlatList}  contentInset= {{bottom: 30}}  data={sections}
        
         renderItem={({ item }) => (
           <Card data={item.books} sectionTitle={item.title} />
