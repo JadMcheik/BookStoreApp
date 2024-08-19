@@ -56,7 +56,7 @@ const SearchCategoryScreen = () => {
       </View>
       <FlatList
         columnWrapperStyle={{ gap }}
-        contentContainerStyle={styles.booksFlatlist}
+   
         contentInset={{ bottom: 50 }}
         numColumns="2"
         data={books}
@@ -93,9 +93,5 @@ const styles = StyleSheet.create({
     width: "100%",
     backgroundColor: Colors.inputBgColor,
   },
-  booksFlatlist: {
-    width: 309,
 
-    alignItems: "center",
-  },
 });
