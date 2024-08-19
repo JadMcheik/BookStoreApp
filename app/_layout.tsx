@@ -22,6 +22,7 @@ const Layout = () => {
       <Stack.Screen name="SignUpScreen" />
       <Stack.Screen name="ForgotPasswordScreen" />
       <Stack.Screen name="HomeScreen" />
+      <Stack.Screen name="SearchCategoryScreen" />
     </Stack>
   );
 };

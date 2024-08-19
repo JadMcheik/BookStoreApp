@@ -26,7 +26,7 @@ const Splash = () => {
         backgroundColor={Colors.CustomWhite}
         textColor={Colors.mainBlue}
         content="Sign In"
-        href="/SignInScreen"
+        href="/SearchCategoryScreen"
       />
       <CustomButton
         backgroundColor={Colors.CustomYellow}
