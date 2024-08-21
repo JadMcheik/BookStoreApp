@@ -1,6 +1,6 @@
 import { TouchableOpacity, Text, StyleSheet } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
-import { Colors } from "../../themes/Colors";
+import { Colors } from "../themes/Colors";
 import { useState } from "react";
 const CustomRadioWithText = (props) => {
   const [selected, setSelected] = useState(false);

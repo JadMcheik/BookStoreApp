@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet, TextInput, StatusBar } from "react-native";
-import PageForm from "../Components/Shared/PageForm";
+import PageForm from "../components/PageForm";
 import { Colors } from "../themes/Colors";
 import { useEffect, useState } from "react";
 
-import CustomRadioWithText from "../Components/Shared/CustomRadioWithText";
-import CustomFooter from "../Components/Shared/CustomFooter";
-import CustomTextInput from "../Components/Shared/CustomTextInput";
+import CustomRadioWithText from "../components/CustomRadioWithText";
+import CustomFooter from "../components/CustomFooter";
+import CustomTextInput from "../components/CustomTextInput";
 
 const SignUpScreen = () => {
   const [correctSingUp, setCorrectSingUp] = useState(false);
@@ -36,7 +36,7 @@ const SignUpScreen = () => {
             correctSingUp ? Colors.mainBlue : Colors.lightBlue
           }
           buttonTextColor={correctSingUp ? Colors.CustomWhite : Colors.mainBlue}
-          href={correctSingUp ? "(tabs)" : "/SignUpScreen"}
+          href={correctSingUp ? "(tabs)" : "/sign-up"}
         >
           <View style={styles.inputsView}>
             <CustomTextInput

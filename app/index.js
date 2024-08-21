@@ -9,12 +9,12 @@ import {
 } from "react-native";
 
 import { Colors } from "../themes/Colors";
-import bookingImage from "../Images/bookingImage.png";
+import bookingImage from "../assets/images/bookingImage.png";
 import { Link, Stack } from "expo-router";
-import CustomButton from "../Components/Shared/CustomButton";
-import BookCard from "../Components/Shared/BookCard";
-import Card from "../Components/Shared/Card";
-import ProfileScreen from "./(tabs)/ProfileScreen";
+import CustomButton from "../components/CustomButton";
+import BookCard from "../components/BookCard";
+import Card from "../components/Card";
+import ProfileScreen from "./(tabs)/profile";
 
 const Splash = () => {
   return (
@@ -27,13 +27,13 @@ const Splash = () => {
         backgroundColor={Colors.CustomWhite}
         textColor={Colors.mainBlue}
         content="Sign In"
-        href="/SignInScreen"
+        href="/sign-in"
       />
       <CustomButton
         backgroundColor={Colors.CustomYellow}
         textColor={Colors.mainBlue}
         content="Sign Up"
-        href="/SignUpScreen"
+        href="/sign-up"
       />
 
       <StatusBar style="light" />

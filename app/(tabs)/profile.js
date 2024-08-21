@@ -1,19 +1,19 @@
 import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
-import CustomProfileSetionContent from "../../Components/Shared/CustomProfileSectionContent";
+import CustomProfileSetionContent from "../../components/CustomProfileSectionContent";
 
 const ProfileScreen = () => {
   return (
     <View style={styles.ProfileScreen}>
       <View style={styles.profileAndNotification}>
         <Text style={styles.profileText}>Profile</Text>
-        <Image source={require("../../Images/ICON-24-Notification.png")} />
+        <Image source={require("../../assets/images/ICON-24-Notification.png")} />
       </View>
 
       <View style={styles.profileInformations}>
         <View>
           <Image
             style={{ width: 80, height: 80 }}
-            source={require("../../Images/profilePhoto.png")}
+            source={require("../../assets/images/profilePhoto.png")}
           />
         </View>
         <View style={styles.profileTypeAndName}>
@@ -29,14 +29,14 @@ const ProfileScreen = () => {
 
 <View style={styles.myBooksSection}>
 <Text style={styles.sectionTitle}>My Books</Text>
-<CustomProfileSetionContent sectionText="Book" numberOfElements={3} href="/ProfileScreen"/>
+<CustomProfileSetionContent sectionText="Book" numberOfElements={3} href="/profile"/>
 </View>
 
 
 <View style={styles.myBooksSection}>
 <Text style={styles.sectionTitle}>My Books</Text>
-<CustomProfileSetionContent sectionText="Edit Profile" href="/ProfileScreen" />
-<CustomProfileSetionContent sectionText="Log out" href="/ProfileScreen"/>
+<CustomProfileSetionContent sectionText="Edit Profile" href="/profile" />
+<CustomProfileSetionContent sectionText="Log out" href="/profile"/>
 </View>
 
     </View>

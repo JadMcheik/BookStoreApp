@@ -1,5 +1,5 @@
 import { FlatList, SafeAreaView, ScrollView, StyleSheet, View } from "react-native";
-import Card from "../../Components/Shared/Card";
+import Card from "../../components/Card";
 
 const HomeScreen = () => {
   const books = [
@@ -8,7 +8,7 @@ const HomeScreen = () => {
       bookTitle: "The Case for Trump",
       bookAuthor: "by Victor Davis Ha…",
       bookReviews: 6,
-      bookImage: require("../../Images/TheCaseForTrump.png"),
+      bookImage: require("../../assets/images/TheCaseForTrump.png"),
       bookRating: 3.5,
     },
 
@@ -17,7 +17,7 @@ const HomeScreen = () => {
       bookTitle: "The Last Romantics",
       bookAuthor: "by Tara Conklin…",
       bookReviews: 7,
-      bookImage: require("../../Images/TheLastRomantics.png"),
+      bookImage: require("../../assets/images/TheLastRomantics.png"),
       bookRating: 4,
     },
 
@@ -26,7 +26,7 @@ const HomeScreen = () => {
       bookTitle: "An Anonymous Girl",
       bookAuthor: "by Greer Hendricks, Sarah…",
       bookReviews: 158,
-      bookImage: require("../../Images/AnAnonymousGirl.png"),
+      bookImage: require("../../assets/images/AnAnonymousGirl.png"),
       bookRating: 3.5,
     },
 
@@ -35,7 +35,7 @@ const HomeScreen = () => {
       bookTitle: "The Case for Trump",
       bookAuthor: "by Victor Davis Ha…",
       bookReviews: 6,
-      bookImage: require("../../Images/TheCaseForTrump.png"),
+      bookImage: require("../../assets/images/TheCaseForTrump.png"),
       bookRating: 3.5,
     },
 
@@ -44,7 +44,7 @@ const HomeScreen = () => {
       bookTitle: "The Last Romantics",
       bookAuthor: "by Tara Conklin…",
       bookReviews: 7,
-      bookImage: require("../../Images/TheLastRomantics.png"),
+      bookImage: require("../../assets/images/TheLastRomantics.png"),
       bookRating: 4,
     },
 
@@ -53,7 +53,7 @@ const HomeScreen = () => {
       bookTitle: "An Anonymous Girl",
       bookAuthor: "by Greer Hendricks, Sarah…",
       bookReviews: 158,
-      bookImage: require("../../Images/AnAnonymousGirl.png"),
+      bookImage: require("../../assets/images/AnAnonymousGirl.png"),
       bookRating: 3.5,
     },
   ];

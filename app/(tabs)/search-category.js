@@ -12,31 +12,31 @@ const SearchCategoryScreen = () => {
   const books = [
     {
       bookId: 1,
-      bookImage: require("../../Images/TheCaseForTrump.png"),
+      bookImage: require("../../assets/images/TheCaseForTrump.png"),
     },
     {
       bookId: 2,
-      bookImage: require("../../Images/TheLastRomantics.png"),
+      bookImage: require("../../assets/images/TheLastRomantics.png"),
     },
     {
       bookId: 3,
-      bookImage: require("../../Images/AnAnonymousGirl.png"),
+      bookImage: require("../../assets/images/AnAnonymousGirl.png"),
     },
 
     {
       bookId: 4,
-      bookImage: require("../../Images/TheCaseForTrump.png"),
+      bookImage: require("../../assets/images/TheCaseForTrump.png"),
     },
-    { bookId: 5, bookImage: require("../../Images/TheLastRomantics.png") },
-    { bookId: 6, bookImage: require("../../Images/AnAnonymousGirl.png") },
+    { bookId: 5, bookImage: require("../../assets/images/TheLastRomantics.png") },
+    { bookId: 6, bookImage: require("../../assets/images/AnAnonymousGirl.png") },
 
     {
       bookId: 7,
-      bookImage: require("../../Images/TheCaseForTrump.png"),
+      bookImage: require("../../assets/images/TheCaseForTrump.png"),
     },
-    { bookId: 8, bookImage: require("../../Images/TheLastRomantics.png") },
-    { bookId: 9, bookImage: require("../../Images/AnAnonymousGirl.png") },
-    { bookId: 10, bookImage: require("../../Images/AnAnonymousGirl.png") },
+    { bookId: 8, bookImage: require("../../assets/images/TheLastRomantics.png") },
+    { bookId: 9, bookImage: require("../../assets/images/AnAnonymousGirl.png") },
+    { bookId: 10, bookImage: require("../../assets/images/AnAnonymousGirl.png") },
   ];
   const gap = 40;
 

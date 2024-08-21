@@ -20,7 +20,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="SearchCategoryScreen"
+        name="search-category"
         options={{
           title: 'Search',
           tabBarIcon: ({color}) => <FontAwesome size={24} name="search" color={color} />,
@@ -28,10 +28,10 @@ export default function TabLayout() {
       />
 
 <Tabs.Screen
-        name="ProfileScreen"
+        name="profile"
         options={{
           title: 'Profile',
-          tabBarIcon: ({color}) =><Image source={require('../../Images/profilePhoto.png')} style={{borderColor:color,borderWidth:2,borderRadius:40,height:24,width:24,  }}/>,
+          tabBarIcon: ({color}) =><Image source={require('../../assets/images/profilePhoto.png')} style={{borderColor:color,borderWidth:2,borderRadius:40,height:24,width:24,  }}/>,
         }}
       />
     </Tabs>

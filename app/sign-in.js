@@ -6,14 +6,14 @@ import {
   StatusBar,
   Image,
 } from "react-native";
-import PageForm from "../Components/Shared/PageForm";
+import PageForm from "../components/PageForm";
 import { Colors } from "../themes/Colors";
-import facebookLogo from "../Images/iconmonstr-facebook-1.png";
-import twitterLogo from "../Images/iconmonstr-twitter-1.png";
+import facebookLogo from "../assets/images/iconmonstr-facebook-1.png";
+import twitterLogo from "../assets/images/iconmonstr-twitter-1.png";
 import { useEffect, useState } from "react";
-import CustomFooter from "../Components/Shared/CustomFooter";
-import CustomRadioWithText from "../Components/Shared/CustomRadioWithText";
-import CustomTextInput from "../Components/Shared/CustomTextInput";
+import CustomFooter from "../components/CustomFooter";
+import CustomRadioWithText from "../components/CustomRadioWithText";
+import CustomTextInput from "../components/CustomTextInput";
 import { Link } from "expo-router";
 
 const SignInScreen = () => {
@@ -65,7 +65,7 @@ const SignInScreen = () => {
           buttonTextColor={
             correctLoginElements ? Colors.CustomWhite : Colors.mainBlue
           }
-          href={correctLoginElements ? "/(tabs)" : "/SignInScreen"}
+          href={correctLoginElements ? "/(tabs)" : "/sign-in"}
         >
           <View style={styles.inputsView}>
             <CustomTextInput
@@ -86,7 +86,7 @@ const SignInScreen = () => {
           <View style={styles.radioAndForgotPassView}>
             <CustomRadioWithText text="Remember me" />
 
-            <Link href="/ForgotPasswordScreen">
+            <Link href="/forgot-password">
               {" "}
               <Text style={styles.forgotYourPassword}>
                 Forgot your Password?
