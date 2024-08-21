@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 12,
-    fontWeight: "300",
-    fontFamily: "circular",
+ 
+    fontFamily: "circular-book",
     color: Colors.lightGray,
     marginLeft: 6,
   },

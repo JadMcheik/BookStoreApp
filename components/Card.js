@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
   },
   sectionTitle: {
     fontSize: 24,
-    fontFamily: "circular",
-    fontWeight: "bold",
+    fontFamily: "circular-bold",
+  
   },
 });

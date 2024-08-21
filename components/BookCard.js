@@ -43,14 +43,14 @@ const styles = StyleSheet.create({
 
   bookTitleText: {
     fontSize: 15,
-    fontFamily: "circular",
-    fontWeight: "bold",
+    fontFamily: "circular-bold",
+  
   },
 
   bookAuthorText: {
     fontSize: 12,
-    fontFamily: "circular",
-    fontWeight: "bold",
+    fontFamily: "circular-bold",
+  
     color: "#D1DDDF",
   },
   bookReviewsView: {
@@ -63,8 +63,8 @@ const styles = StyleSheet.create({
   },
   bookReviewsText: {
     fontSize: 12,
-    fontFamily: "circular",
-    fontWeight: "300",
+    fontFamily: "circular-book",
+
     color: "#D1DDDF",
   },
 });

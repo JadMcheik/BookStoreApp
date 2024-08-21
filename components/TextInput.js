@@ -10,6 +10,7 @@ const CustomTextInput = (props) => {
       value={props.value}
       onChangeText={props.function}
       secureTextEntry={props.secureTextEntry}
+      placeholderTextColor={Colors.lightGray}
     />
   );
 };
@@ -21,9 +22,10 @@ const styles = StyleSheet.create({
     width: 335,
     height: 56,
     fontSize: 17,
-    fontFamily: "circular",
+    fontFamily: "circular-medium", 
     paddingLeft: 20,
     backgroundColor: Colors.inputBgColor,
     borderRadius: 218,
+    
   },
 });

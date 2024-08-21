@@ -60,9 +60,9 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
   },
   profileText: {
-    fontFamily: "circular",
+    fontFamily: "circular-bold",
     fontSize: 44,
-    fontWeight: "bold",
+  
   },
   profileInformations: {
     flexDirection: "row",
@@ -84,16 +84,16 @@ const styles = StyleSheet.create({
   },
   profileTypeText: {
     color: "#C4A12D",
-    fontFamily: "circular",
+    fontFamily: "circular-bold",
     fontSize: 12,
-    fontWeight: "bold",
+  
     textAlign: "center",
   },
 
   profileNameText: {
-    fontFamily: "circular",
+    fontFamily: "circular-bold",
     fontSize: 24,
-    fontWeight: "bold",
+  
   },
   myBooksSection: {
     rowGap: 10,
@@ -101,9 +101,9 @@ const styles = StyleSheet.create({
   },
 
   sectionTitle: {
-    fontFamily: "circular",
+    fontFamily: "circular-bold",
     fontSize: 12,
-    fontFamily: "bold",
+ 
     color: "#D1DDDF",
   },
 });

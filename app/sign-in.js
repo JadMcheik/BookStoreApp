@@ -14,7 +14,7 @@ import CustomRadioWithText from "../components/RadioWithText";
 import CustomTextInput from "../components/TextInput";
 import { Link } from "expo-router";
 import FacebookSVG from "../assets/svg/FacebookSVG";
-import TwitterSVG from "../assets/svg/twitterSVG";
+import TwitterSVG from "../assets/svg/TwitterSvg";
 
 const SignInScreen = () => {
   const [selected, setSelected] = useState(false);
@@ -141,8 +141,8 @@ const styles = StyleSheet.create({
   },
   forgotYourPassword: {
     fontSize: 12,
-    fontFamily: "circular",
-    fontWeight: "300",
+    fontFamily: "circular-book",
+ 
     color: Colors.lightGray,
   },
   orAndLogosView: {

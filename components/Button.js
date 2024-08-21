@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 17,
 
-    fontFamily: "Circular",
+    fontFamily: "Circular-medium",
   },
 });

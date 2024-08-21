@@ -18,9 +18,9 @@ export default customFooter;
 const styles = StyleSheet.create({
   footerText: {
     color: Colors.lightGray,
-    fontFamily: "circular",
+    fontFamily: "circular-book",
     fontSize: 11,
-    fontWeight: "300",
+
     textAlign: "center",
   },
 });

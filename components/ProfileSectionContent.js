@@ -30,9 +30,9 @@ const styles = StyleSheet.create({
   },
 
   sectionText: {
-    fontFamily: "circular",
+    fontFamily: "circular-bold",
     fontSize: 17,
-    fontWeight: "bold",
+  
   },
   sectionRightView: {
     flexDirection: "row",
@@ -40,9 +40,9 @@ const styles = StyleSheet.create({
     columnGap: 10,
   },
   numberOfElements: {
-    fontFamily: "circular",
+    fontFamily: "circular-bold",
     fontSize: 17,
-    fontWeight: "bold",
+   
     color: Colors.mainBlue,
   },
 });

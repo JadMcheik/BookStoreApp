@@ -3,7 +3,14 @@ import { Tabs } from "expo-router";
 import { Colors } from "../../themes/Colors";
 import { Image } from "react-native";
 import ProfileSmallPhoto from "../../assets/svg/ProfileSmallPhoto";
+import { useFonts } from "expo-font";
 export default function TabLayout() {
+
+  
+  const [loaded, error] = useFonts({
+    'circular-book': require('../../assets/fonts/CircularStd-Book.otf'),
+    'circular-bold': require('../../assets/fonts/CircularStd-Bold.otf'),
+  });
   return (
     <Tabs
       screenOptions={{
