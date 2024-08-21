@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import CustomButton from "./CustomButton";
+import CustomButton from "./Button";
 
 const PageForm = ({
   title,

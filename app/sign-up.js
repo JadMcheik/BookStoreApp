@@ -3,9 +3,9 @@ import PageForm from "../components/PageForm";
 import { Colors } from "../themes/Colors";
 import { useEffect, useState } from "react";
 
-import CustomRadioWithText from "../components/CustomRadioWithText";
-import CustomFooter from "../components/CustomFooter";
-import CustomTextInput from "../components/CustomTextInput";
+import CustomRadioWithText from "../components/RadioWithText";
+import CustomFooter from "../components/Footer";
+import CustomTextInput from "../components/TextInput";
 
 const SignUpScreen = () => {
   const [correctSingUp, setCorrectSingUp] = useState(false);

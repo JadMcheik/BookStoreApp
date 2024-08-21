@@ -1,5 +1,5 @@
 import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
-import CustomProfileSetionContent from "../../components/CustomProfileSectionContent";
+import CustomProfileSetionContent from "../../components/ProfileSectionContent";
 
 const ProfileScreen = () => {
   return (

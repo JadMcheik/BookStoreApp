@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import PageForm from "../components/PageForm";
 import { Colors } from "../themes/Colors";
-import CustomTextInput from "../components/CustomTextInput";
+import CustomTextInput from "../components/TextInput";
 import { useState } from "react";
 
 const ForgotPasswordScreen = () => {

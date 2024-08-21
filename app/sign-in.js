@@ -11,9 +11,9 @@ import { Colors } from "../themes/Colors";
 import facebookLogo from "../assets/images/iconmonstr-facebook-1.png";
 import twitterLogo from "../assets/images/iconmonstr-twitter-1.png";
 import { useEffect, useState } from "react";
-import CustomFooter from "../components/CustomFooter";
-import CustomRadioWithText from "../components/CustomRadioWithText";
-import CustomTextInput from "../components/CustomTextInput";
+import CustomFooter from "../components/Footer";
+import CustomRadioWithText from "../components/RadioWithText";
+import CustomTextInput from "../components/TextInput";
 import { Link } from "expo-router";
 
 const SignInScreen = () => {

@@ -11,7 +11,7 @@ import {
 import { Colors } from "../themes/Colors";
 import bookingImage from "../assets/images/bookingImage.png";
 import { Link, Stack } from "expo-router";
-import CustomButton from "../components/CustomButton";
+import CustomButton from "../components/Button";
 import BookCard from "../components/BookCard";
 import Card from "../components/Card";
 import ProfileScreen from "./(tabs)/profile";
