@@ -8,13 +8,13 @@ import {
 } from "react-native";
 import PageForm from "../components/PageForm";
 import { Colors } from "../themes/Colors";
-import facebookLogo from "../assets/images/iconmonstr-facebook-1.png";
-import twitterLogo from "../assets/images/iconmonstr-twitter-1.png";
 import { useEffect, useState } from "react";
 import CustomFooter from "../components/Footer";
 import CustomRadioWithText from "../components/RadioWithText";
 import CustomTextInput from "../components/TextInput";
 import { Link } from "expo-router";
+import FacebookSVG from "../assets/svg/FacebookSVG";
+import TwitterSVG from "../assets/svg/twitterSVG";
 
 const SignInScreen = () => {
   const [selected, setSelected] = useState(false);
@@ -101,12 +101,12 @@ const SignInScreen = () => {
             <View
               style={[styles.imageLogoView, { backgroundColor: "#4267B2" }]}
             >
-              <Image source={facebookLogo} style={styles.imageLogo} />
+              <FacebookSVG />
             </View>
             <View
               style={[styles.imageLogoView, { backgroundColor: "#1C9DEB" }]}
             >
-              <Image source={twitterLogo} style={styles.imageLogo} />
+              <TwitterSVG />
             </View>
           </View>
         </View>

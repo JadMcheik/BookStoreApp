@@ -1,37 +1,43 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Tabs } from 'expo-router';
-import { Colors } from '../../themes/Colors';
-import { Image } from 'react-native';
-
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { Tabs } from "expo-router";
+import { Colors } from "../../themes/Colors";
+import { Image } from "react-native";
+import ProfileSmallPhoto from "../../assets/svg/ProfileSmallPhoto";
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor:Colors.mainBlue ,  tabBarInactiveTintColor: 'gray',
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: Colors.mainBlue,
+        tabBarInactiveTintColor: "gray",
 
-      
-       
         headerTitle: "",
-        headerShown:false,}}>
+        headerShown: false,
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-         
-          title: 'Home',
-          tabBarIcon: ({color}) =><FontAwesome size={24} name="home" color={color} />,
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome size={24} name="home" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="search-category"
         options={{
-          title: 'Search',
-          tabBarIcon: ({color}) => <FontAwesome size={24} name="search" color={color} />,
+          title: "Search",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome size={24} name="search" color={color} />
+          ),
         }}
       />
 
-<Tabs.Screen
+      <Tabs.Screen
         name="profile"
         options={{
-          title: 'Profile',
-          tabBarIcon: ({color}) =><Image source={require('../../assets/images/profilePhoto.png')} style={{borderColor:color,borderWidth:2,borderRadius:40,height:24,width:24,  }}/>,
+          title: "Profile",
+          tabBarIcon: ({ color }) => <ProfileSmallPhoto color={color} />,
         }}
       />
     </Tabs>

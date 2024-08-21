@@ -27,16 +27,31 @@ const SearchCategoryScreen = () => {
       bookId: 4,
       bookImage: require("../../assets/images/TheCaseForTrump.png"),
     },
-    { bookId: 5, bookImage: require("../../assets/images/TheLastRomantics.png") },
-    { bookId: 6, bookImage: require("../../assets/images/AnAnonymousGirl.png") },
+    {
+      bookId: 5,
+      bookImage: require("../../assets/images/TheLastRomantics.png"),
+    },
+    {
+      bookId: 6,
+      bookImage: require("../../assets/images/AnAnonymousGirl.png"),
+    },
 
     {
       bookId: 7,
       bookImage: require("../../assets/images/TheCaseForTrump.png"),
     },
-    { bookId: 8, bookImage: require("../../assets/images/TheLastRomantics.png") },
-    { bookId: 9, bookImage: require("../../assets/images/AnAnonymousGirl.png") },
-    { bookId: 10, bookImage: require("../../assets/images/AnAnonymousGirl.png") },
+    {
+      bookId: 8,
+      bookImage: require("../../assets/images/TheLastRomantics.png"),
+    },
+    {
+      bookId: 9,
+      bookImage: require("../../assets/images/AnAnonymousGirl.png"),
+    },
+    {
+      bookId: 10,
+      bookImage: require("../../assets/images/AnAnonymousGirl.png"),
+    },
   ];
   const gap = 40;
 
@@ -55,8 +70,8 @@ const SearchCategoryScreen = () => {
         />
       </View>
       <FlatList
-      contentContainerStyle={styles.SearchFlatlist}
-      showsVerticalScrollIndicator={false} 
+        contentContainerStyle={styles.SearchFlatlist}
+        showsVerticalScrollIndicator={false}
         columnWrapperStyle={{ gap }}
         contentInset={{ bottom: 70 }}
         numColumns="2"
@@ -92,11 +107,11 @@ const styles = StyleSheet.create({
   },
   SearchBar: {
     width: "100%",
-  
+
     backgroundColor: Colors.inputBgColor,
   },
-  SearchFlatlist:{
+  SearchFlatlist: {
     width: "100%",
-    alignItems:'center',
+    alignItems: "center",
   },
 });

@@ -1,20 +1,19 @@
 import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
 import CustomProfileSetionContent from "../../components/ProfileSectionContent";
-
+import ProfileSVG from "../../assets/svg/ProfileSVG";
 const ProfileScreen = () => {
   return (
     <View style={styles.ProfileScreen}>
       <View style={styles.profileAndNotification}>
         <Text style={styles.profileText}>Profile</Text>
-        <Image source={require("../../assets/images/ICON-24-Notification.png")} />
+        <Image
+          source={require("../../assets/images/ICON-24-Notification.png")}
+        />
       </View>
 
       <View style={styles.profileInformations}>
         <View>
-          <Image
-            style={{ width: 80, height: 80 }}
-            source={require("../../assets/images/profilePhoto.png")}
-          />
+          <ProfileSVG />
         </View>
         <View style={styles.profileTypeAndName}>
           <View style={styles.profileTypeView}>
@@ -26,19 +25,23 @@ const ProfileScreen = () => {
         </View>
       </View>
 
+      <View style={styles.myBooksSection}>
+        <Text style={styles.sectionTitle}>My Books</Text>
+        <CustomProfileSetionContent
+          sectionText="Book"
+          numberOfElements={3}
+          href="/profile"
+        />
+      </View>
 
-<View style={styles.myBooksSection}>
-<Text style={styles.sectionTitle}>My Books</Text>
-<CustomProfileSetionContent sectionText="Book" numberOfElements={3} href="/profile"/>
-</View>
-
-
-<View style={styles.myBooksSection}>
-<Text style={styles.sectionTitle}>My Books</Text>
-<CustomProfileSetionContent sectionText="Edit Profile" href="/profile" />
-<CustomProfileSetionContent sectionText="Log out" href="/profile"/>
-</View>
-
+      <View style={styles.myBooksSection}>
+        <Text style={styles.sectionTitle}>My Books</Text>
+        <CustomProfileSetionContent
+          sectionText="Edit Profile"
+          href="/profile"
+        />
+        <CustomProfileSetionContent sectionText="Log out" href="/profile" />
+      </View>
     </View>
   );
 };
@@ -47,17 +50,14 @@ export default ProfileScreen;
 
 const styles = StyleSheet.create({
   ProfileScreen: {
-    flex:1,
-    backgroundColor:'#FFFFFF',
+    flex: 1,
+    backgroundColor: "#FFFFFF",
     paddingHorizontal: 20,
-
- 
   },
   profileAndNotification: {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-
   },
   profileText: {
     fontFamily: "circular",
@@ -95,21 +95,15 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
   },
-  myBooksSection:{
-
-rowGap:10,
-marginBottom:33,
-
+  myBooksSection: {
+    rowGap: 10,
+    marginBottom: 33,
   },
 
-  sectionTitle:{
-
-fontFamily:'circular',
-fontSize:12,
-fontFamily:'bold',
-color:'#D1DDDF',
-
+  sectionTitle: {
+    fontFamily: "circular",
+    fontSize: 12,
+    fontFamily: "bold",
+    color: "#D1DDDF",
   },
-
-
 });
