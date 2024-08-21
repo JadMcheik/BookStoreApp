@@ -27,9 +27,9 @@ const Layout = () => {
           },
         }}
       />
-      <Stack.Screen name="SignInScreen" />
-      <Stack.Screen name="SignUpScreen" />
-      <Stack.Screen name="ForgotPasswordScreen" />
+      <Stack.Screen name="sign-in" />
+      <Stack.Screen name="sign-up" />
+      <Stack.Screen name="forgot-password" />
 
       <Stack.Screen name="(tabs)" options={{ headerShown: true }} />
     </Stack>
