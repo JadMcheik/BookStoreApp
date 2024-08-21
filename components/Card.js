@@ -7,7 +7,7 @@ const Card = (props) => {
       <Text style={styles.sectionTitle}>{props.sectionTitle}</Text>
 
       <FlatList
-      showsHorizontalScrollIndicator={false}
+        showsHorizontalScrollIndicator={false}
         data={props.data}
         horizontal={true}
         renderItem={({ item }) => (
@@ -35,6 +35,5 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontFamily: "circular-bold",
-  
   },
 });

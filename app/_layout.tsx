@@ -3,12 +3,10 @@ import { Colors } from "../themes/Colors";
 import { useFonts } from "expo-font";
 
 const Layout = () => {
-
   const [loaded, error] = useFonts({
-    'circular-book': require('../assets/fonts/CircularStd-Book.otf'),
-    'circular-bold': require('../assets/fonts/CircularStd-Bold.otf'),
-    'circular-medium': require('../assets/fonts/CircularStd-Medium.otf'),
-    
+    "circular-book": require("../assets/fonts/CircularStd-Book.otf"),
+    "circular-bold": require("../assets/fonts/CircularStd-Bold.otf"),
+    "circular-medium": require("../assets/fonts/CircularStd-Medium.otf"),
   });
 
   return (

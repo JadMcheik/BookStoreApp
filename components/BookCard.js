@@ -44,13 +44,12 @@ const styles = StyleSheet.create({
   bookTitleText: {
     fontSize: 15,
     fontFamily: "circular-bold",
-  
   },
 
   bookAuthorText: {
     fontSize: 12,
     fontFamily: "circular-bold",
-  
+
     color: "#D1DDDF",
   },
   bookReviewsView: {

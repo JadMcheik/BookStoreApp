@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
   sectionText: {
     fontFamily: "circular-bold",
     fontSize: 17,
-  
   },
   sectionRightView: {
     flexDirection: "row",
@@ -42,7 +41,7 @@ const styles = StyleSheet.create({
   numberOfElements: {
     fontFamily: "circular-bold",
     fontSize: 17,
-   
+
     color: Colors.mainBlue,
   },
 });

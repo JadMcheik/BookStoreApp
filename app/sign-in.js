@@ -142,7 +142,7 @@ const styles = StyleSheet.create({
   forgotYourPassword: {
     fontSize: 12,
     fontFamily: "circular-book",
- 
+
     color: Colors.lightGray,
   },
   orAndLogosView: {

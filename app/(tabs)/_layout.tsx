@@ -14,6 +14,12 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
+
+        tabBarStyle: {
+          height: 85,
+        borderTopColor: Colors.mainBlue,
+        },
+
         tabBarActiveTintColor: Colors.mainBlue,
         tabBarInactiveTintColor: "gray",
 
@@ -35,6 +41,7 @@ export default function TabLayout() {
         options={{
           title: "Search",
           tabBarIcon: ({ color }) => (
+            
             <FontAwesome size={24} name="search" color={color} />
           ),
         }}

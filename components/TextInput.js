@@ -22,10 +22,9 @@ const styles = StyleSheet.create({
     width: 335,
     height: 56,
     fontSize: 17,
-    fontFamily: "circular-medium", 
+    fontFamily: "circular-medium",
     paddingLeft: 20,
     backgroundColor: Colors.inputBgColor,
     borderRadius: 218,
-    
   },
 });
