@@ -10,6 +10,7 @@ export default function TabLayout() {
   const [loaded, error] = useFonts({
     'circular-book': require('../../assets/fonts/CircularStd-Book.otf'),
     'circular-bold': require('../../assets/fonts/CircularStd-Bold.otf'),
+    "circular-medium": require("../assets/fonts/CircularStd-Medium.otf"),
   });
   return (
     <Tabs
