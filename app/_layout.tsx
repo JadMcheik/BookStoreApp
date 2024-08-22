@@ -1,6 +1,9 @@
-import { Stack } from "expo-router";
+import { SplashScreen, Stack } from "expo-router";
 import { Colors } from "../themes/Colors";
 import { useFonts } from "expo-font";
+import { useEffect } from "react";
+
+SplashScreen.preventAutoHideAsync();
 
 const Layout = () => {
   const [loaded, error] = useFonts({
@@ -8,6 +11,15 @@ const Layout = () => {
     "circular-bold": require("../assets/fonts/CircularStd-Bold.otf"),
     "circular-medium": require("../assets/fonts/CircularStd-Medium.otf"),
   });
+  useEffect(() => {
+    if (loaded || error) {
+      SplashScreen.hideAsync();
+    }
+  }, [loaded, error]);
+
+  if (!loaded && !error) {
+    return null;
+  }
 
   return (
     <Stack
